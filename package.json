@@ -1,10 +1,10 @@
 {
   "name": "acit2520final",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "David Xiao",
   "license": "ISC",
@@ -13,5 +13,14 @@
     "express": "^4.16.3",
     "hbs": "^4.0.1",
     "request": "^2.85.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EXcurrybat/acit2520final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EXcurrybat/acit2520final/issues"
+  },
+  "homepage": "https://github.com/EXcurrybat/acit2520final#readme",
+  "description": ""
 }
