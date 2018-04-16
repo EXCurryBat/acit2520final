@@ -181,7 +181,7 @@ app.post('/', (request, response) => {
 
 		pixa(input_2).then((result) => {
 			console.log(result.hits[1].userImageURL)
-			for (var i=0;i<5;i++) {
+			for (var i=0;i<result.hits.length;i++) {
 				picObj = picObj + `<img src=${result.hits[i].userImageURL}>`
 			}
 			// console.log(picObj);
