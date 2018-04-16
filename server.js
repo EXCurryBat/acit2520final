@@ -180,9 +180,11 @@ app.post('/', (request, response) => {
 	if (input_2 != '') {
 
 		pixa(input_2).then((result) => {
-			for (var item in result.hits) {
-				picObj = picObj + `<img src=${item.webformatURL}>`
+			console.log(result.hits[1].userImageURL)
+			for (var i=0;i<5;i++) {
+				picObj = picObj + `<img src=${result.hits[i].userImageURL}>`
 			}
+			// console.log(picObj);
 			return picObj;
 			// response.send(result);
 		}).then((result) => {
