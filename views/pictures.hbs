@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+	</head>
+	<body>
+		{{> header}}
+		<div id="search">
+			{{myvar}}
+			{{myvar2}}
+			<p>Welcome to my pictures page</p>
+			<p>Please enter your keyword below to search for pictures</p>
+			<div class="form-group">
+			  	<form action="/" method="post">
+			    	<label for="username">Keyword 1: </label>
+			        <input id="username" type="text" name="username">
+			        <label for="password">Keyword 2: </label>
+			        <input id="password" type="text" name="password">
+			        <input id="enter-pass" type="submit" value="GET">
+				</form>
+			</div>
+			<a href=home>Return to homepage</a>
+			
+		</div>
+		<!-- {{> list}} -->
+		{{> footer}}
+	</body>
+</html>
